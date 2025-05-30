@@ -1,0 +1,82 @@
+html {
+  background: linear-gradient(to top right, black, black, black, #03cffc);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: roboto;
+  color: white;
+}
+
+body {
+  backdrop-filter: blur(20px);
+  background: none;
+  justify-content: center;
+  align-items: center;
+}
+
+header {
+  background: black;
+  backdrop-filter: blur(5px);
+  padding: 8px;
+  margin: -8px;
+  width: 100%;
+  border-bottom: 0.2px solid white;
+  position: fixed;
+  z-index: 100;
+}
+
+.button-in {
+  align-items: center;
+  text-align: center;
+}
+
+.button-in button {
+  background: #037bfc;
+  border: none;
+  border-radius: 8px;
+  padding: 2px;
+  color: white;
+}
+
+.content {
+  background: none;
+  backdrop-filter: blur(20px);
+}
+
+.button-out {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.button-out button {
+  background: none;
+  border-radius: 50%/100%;
+  width: 160px;
+  margin-right: 20px;
+  border: 1px solid white;
+  color: white;
+}
+
+.button-out h1 {
+  margin-top: 2px;
+}
+
+.button-out label {
+  color: gray;
+  font-size: 15px;
+}
+
+.quest1 {
+  background: rgb(0,0,0,0.4);
+  border-radius: 8px;
+  border: 1px solid white;
+  width: 98%;
+  padding-left: 5px;
+}
+
+footer {
+  background: black;
+  text-align: center;
+  padding: 8px;
+  margin-bottom: -20px;
+}
