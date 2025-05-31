@@ -95,7 +95,8 @@
   </footer>
 </body>
 </html>
-<script> 
+<script src="https://zianfreelance.vercel.app/status.js"></script>
+<script async> 
 let texted = document.getElementById("advertense"); 
 let index = 0;
 let teks = ["Cepat", "Murah", "Garansi 2 Hari", "Cepat", "Murah", "Garansi 2 Hari", "Cepat", "Murah", "Garansi 2 Hari", "Cepat", "Murah", "Garansi 2 Hari", "Cepat", "Murah", "Garansi 2 Hari", "Cepat", "Murah", "Garansi 2 Hari", "Cepat", "Murah", "Garansi 2 Hari", "Cepat", "Murah", "Garansi 2 Hari", "Cepat", "Murah", "Garansi 2 Hari", "Cepat", "Murah", "Garansi 2 Hari", "Cepat", "Murah", "Garansi 2 Hari", "Cepat", "Murah", "Garansi 2 Hari", "Cepat", "Murah", "Garansi 2 Hari", "Cepat", "Murah", "Garansi 2 Hari", "Cepat", "Murah", "Garansi 2 Hari", "Cepat", "Murah", "Garansi 2 Hari", "Cepat", "Murah", "Garansi 2 Hari", "Cepat", "Murah", "Garansi 2 Hari", "Cepat", "Murah", "Garansi 2 Hari", "Cepat", "Murah", "Garansi 2 Hari", "Cepat", "Murah", "Garansi 2 Hari", "Cepat", "Murah", "Garansi 2 Hari", "Cepat", "Murah", "Garansi 2 Hari", "Cepat", "Murah", "Garansi 2 Hari", "Cepat", "Murah", "Garansi 2 Hari", "Cepat", "Murah", "Garansi 2 Hari", "Cepat", "Murah", "Garansi 2 Hari", "Cepat", "Murah", "Garansi 2 Hari", "Cepat", "Murah", "Garansi 2 Hari", "Cepat", "Murah", "Garansi 2 Hari", "Cepat", "Murah", "Garansi 2 Hari", "Cepat", "Murah", "Garansi 2 Hari", "Cepat", "Murah", "Garansi 2 Hari", "Cepat", "Murah", "Garansi 2 Hari"];
@@ -114,7 +115,7 @@ let ram = document.getElementById("ram");
 let cpu = document.getElementById("cpu");
 
 function updateStatus() {
-  fetch('/api/status')
+  fetch('/status.js')
     .then(response => response.json())
     .then(data => {
       document.getElementById('bandwidth').textContent = data.bandwidth;
