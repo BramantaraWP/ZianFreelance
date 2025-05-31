@@ -94,20 +94,20 @@ footer {
 .dstat {
   text-align: center;
   align-items: center;
+  display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
-.dstat button {
-  background: none;
+iframe {
+  border: none;
   border-radius: 20px;
-  width: 160px;
-  margin-right: 20px;
-  border: 1px solid white;
-  color: white;
+  object-fit: cover;
   margin-top: 15px;
 }
 
-.dstat label {
-  font-size: 15px;
+.container {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
