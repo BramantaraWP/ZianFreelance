@@ -1,10 +1,11 @@
 export default function handler(req, res) {
-  const data = {
-    bandwidth: `${(Math.random() * 100).toFixed(2)} Mbps`,
-    ping: `${Math.floor(Math.random() * 300)} ms`,
-    ram: `${(Math.random() * 16).toFixed(2)} GB`,
-    cpu: `${(Math.random() * 100).toFixed(1)} %`
-  };
+  const random = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
 
-  res.status(200).json(data);
+  res.status(200).json({
+    bandwidth: `${random(20, 100)} Mbps`,
+    ping: `${random(1, 40)} ms`,
+    ram: `${random(20, 1000)} Mb/1Tb`,
+    cpu: `${random(5, 1000)} %`,
+    updated: new Date().toISOString()
+  });
 }
