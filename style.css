@@ -99,15 +99,16 @@ footer {
   justify-content: center;
 }
 
-iframe {
-  border: none;
+.dstat button {
+  background: none;
   border-radius: 20px;
-  object-fit: cover;
+  width: 160px;
+  margin-right: 20px;
+  border: 1px solid white;
+  color: white;
   margin-top: 15px;
 }
 
-.container {
-  align-items: center;
-  justify-content: center;
-  text-align: center;
+.dstat label {
+  font-size: 15px;
 }
