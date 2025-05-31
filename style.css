@@ -35,6 +35,7 @@ header {
   border-radius: 8px;
   padding: 2px;
   color: white;
+  cursor: pointer;
 }
 
 .content {
@@ -74,9 +75,40 @@ header {
   padding-left: 5px;
 }
 
+.quest {
+  background: linear-gradient(to bottom left, black, black, black, #03cffc);
+  background-repeat: no-repeat;
+  background-size: cover;
+  backdrop-filter: blur(20px);
+  border-radius: 18px 18px 0px 0px;
+  border-bottom: 1px solid white;
+}
+
 footer {
   background: black;
   text-align: center;
   padding: 8px;
   margin-bottom: -20px;
+}
+
+.dstat {
+  text-align: center;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.dstat button {
+  background: none;
+  border-radius: 20px;
+  width: 160px;
+  margin-right: 20px;
+  border: 1px solid white;
+  color: white;
+  margin-top: 15px;
+}
+
+.dstat label {
+  font-size: 15px;
 }
