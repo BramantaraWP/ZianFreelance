@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+  body {
+    background: black;
+    font-family: roboto;
+  }
+  
+  button {
+    background: none;
+    border-radius: 20px;
+    width: 160px;
+    margin-right: 20px;
+    border: 1px solid white;
+    color: white;
+  }
+  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=5.0">
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <title>Website Status ZianFreelance</title>
+</head>
+<body>
+  <button>
+    <br>
+    <label>Current In Speed</label>
+    <h2 id="bandwidth">N/A</h2>
+  </button>
+</body>
+</html>
+<script>
+let bandwidth = document.getElementById("bandwidth");
+  
+function autohorize() {
+  bandwidth.innerText = `${Math.floor(Math.random() * 100) + 40} Mbps`;
+  setTimeout(autohorize, 4500);
+}
+
+autohorize();
+</script>
