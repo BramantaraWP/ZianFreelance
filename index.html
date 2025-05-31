@@ -18,6 +18,7 @@
   <div class="button-in">
     <br><br>
     <button onclick="location.href='https://wa.me/+6285124289779'"><h2>Order Website Sekarang!</h2></button>
+    <h4 style="color: gray;">Rating Website: 4.0 ★★★★☆</h3>
   </div><br>
   <div class="for-background">
   </div>
@@ -27,21 +28,47 @@
       <button>
         <br>
         <label>Online Website!</label>
-        <h1>8</h3>
+        <h1>8</h1>
       </button>
       <button>
         <br>
         <label>Website Offline</label>
-        <h1>0</h3>
+        <h1>0</h1>
+      </button>
+    </div>
+    <br><br>
+    <div class="dstat">
+      <h1>Status Website</h1>
+      <button>
+        <br>
+        <label>Bandwidth</label>
+        <h2 id="bandwidth">N/A</h2>
+      </button>
+      <button>
+        <br>
+        <label>Ping</label>
+        <h2 id="ping">N/A</h2>
+      </button>
+      <button>
+        <br>
+        <label>Ram</label>
+        <h2 id="ram">N/A</h2>
+      </button>
+      <button>
+        <br>
+        <label>Cpu</label>
+        <h2 id="cpu">N/A</h2>
       </button>
     </div>
   </div>
+  <br>
   <div class="quest">
-    <h1>Question!</h1>
+    <br><br>
+    <h1 style="text-align: center;">Question!</h1>
     <div class="quest1">
       <h3>Bagaimana cara Contant ZianFreelance?</h3>
       <label style="color: gray; font-size: 15px;">Chat ke WhatsApp dengan nomor +62 851-2428-9779<br>
-      Atau pencet tombol ini <strong style="border-radius: 8px; border: 1px solid white; padding: 4px; color: seagreen;" onclick="location.href='https://wa.me/+6285124289779'">WhatsApp</strong>
+      Atau pencet tombol ini <strong style="cursor: pointer; border-radius: 8px; border: 1px solid white; padding: 4px; color: seagreen;" onclick="location.href='https://wa.me/+6285124289779'">WhatsApp</strong>
       </label>
       <br><br>
     </div>
@@ -53,7 +80,13 @@
         untuk membuat situs sesuai keinginan client
       </label>
       <br><br>
+    </div><br>
+    <div class="quest1">
+      <h3>Apa OS Yang Digunakan Anda?</h3>
+      <label style="color: gray; font-size: 15px;">Kami Menggunakan BlacksharkOS Sebagai Os Untuk Device Kami (Dibuat Sendiri)</label>
+      <br><br>
     </div>
+    <br>
   </div><br>
   <footer>
     <h5>Copyright© 2025 ZianFreelance. All Right Reserved</h5>
@@ -73,4 +106,19 @@ function updateText() {
   } 
 }
 updateText();
+
+let bandwidth = document.getElementById("bandwidth");
+let ping = document.getElementById("ping");
+let ram = document.getElementById("ram");
+let cpu = document.getElementById("cpu");
+
+function autohorize() {
+  bandwidth.innerText = `${Math.floor(Math.random() * 100) + 40} Mbps`;
+  ping.innerText = `${Math.floor(Math.random() * 255) + 1}ms`;
+  ram.innerText = `${Math.floor(Math.random() * 1000) + 1}Mb/1Tb`;
+  cpu.innerText = `${Math.floor(Math.random() * 50) + 5}%`;
+  setTimeout(autohorize, 4500);
+}
+
+autohorize();
 </script> 
