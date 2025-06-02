@@ -81,7 +81,6 @@ header {
   background-size: cover;
   backdrop-filter: blur(20px);
   border-radius: 18px 18px 0px 0px;
-  border-bottom: 1px solid white;
 }
 
 footer {
